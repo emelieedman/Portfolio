@@ -7,7 +7,7 @@ const StoryblokClient = require("storyblok-js-client");
 connected to our Storyblok account and space.
 Please replace this accessToken with your own one.*/
 const Storyblok = new StoryblokClient({
-  accessToken: "CMevxMzNABuUQdQdNNiWpQtt",
+  accessToken: "iuBjT7UJvkPAERyCBc3DaAtt",
   cache: {
     clear: "auto",
     type: "memory"
