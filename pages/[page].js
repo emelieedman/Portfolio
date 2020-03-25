@@ -8,7 +8,7 @@ import DefaultLayout from "../components/layouts/DefaultLayout";
 
 /* components */
 import HeadlineModule from "../components/modules/HeadlineModule";
-import ParagraphModule from "../components/modules/ParagraphModule";
+import Collage from "../components/modules/Collage/Collage.jsx";
 
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
@@ -25,7 +25,7 @@ const SlugPage = ({ data }) => {
   return (
     <DefaultLayout>
       {headlineModuleData ? <HeadlineModule title={headlineModuleData.title} subtitle={headlineModuleData.subtitle} /> : null}
-  {collageData ? <Collage title={collageData.title} image1={collageData.image1} image2={collageData.image2} image3={collageData.image3} image4={collageData.image4} image5={collageData.image5} image6={collageData.image6} image7={collageData.image7} image8={collageData.image8} image9={collageData.image9} image10={collageData.image10} /> : null }
+      {collageData ? <Collage title={collageData.title} image1={collageData.image1} image2={collageData.image2} image3={collageData.image3} image4={collageData.image4} image5={collageData.image5} image6={collageData.image6} image7={collageData.image7} image8={collageData.image8} image9={collageData.image9} image10={collageData.image10} /> : null }
     </DefaultLayout>
   );
 };

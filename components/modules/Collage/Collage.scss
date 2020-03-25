@@ -1,0 +1,17 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 100vh;
+}
+
+.title {
+    align-self: center;
+    width: 20vw;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13vw;
+    line-height: 105.2%;
+    letter-spacing: 0.065em;
+}

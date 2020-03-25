@@ -1,8 +1,8 @@
-import styles from "./Collage.module.css";
+import styles from "./Collage.scss";
 
 const Collage = ({ title, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10}) => {
     return (
-        <div>
+        <div className={styles.wrapper}>
             <h1 className={styles.title}>{title}</h1>
             <img className={styles.image1} src={image1} alt="" />
             <img className={styles.image2} src={image2} alt="" />
