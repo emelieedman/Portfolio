@@ -12,7 +12,6 @@ const DefaultLayout = (props) => {
 	return (
 		<div className={(resets, style.root)}>
 			<div className={style.pageWrapper}>
-				<div className="cursor"></div>
 				<Head title={title} description={description} />
 				{props.children}
 			</div>

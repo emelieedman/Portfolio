@@ -1,0 +1,24 @@
+.toggleButton {
+    position: absolute;
+    top: 3vw;
+    left: 90vw;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 105.2%;
+    letter-spacing: 0.065em;
+    background-color: #D1B5DB;
+    color: #BAFFF7;
+}
+
+.default {
+    background-color: green;
+}
+
+.onclick {
+    background-color: green;
+}
