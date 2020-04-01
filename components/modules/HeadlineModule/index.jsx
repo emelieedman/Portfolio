@@ -1,150 +1,122 @@
 /* styles */
-import React, { useState } from "react";
+import React, {useState} from 'react';
 import styles from './index.scss';
 
+const titleColors = [
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #FFFFFF 335px, #FFFFFF 990px, #000000 990px)',
+    ['-webkit-text-fill-color']: 'transparent',
+    ['-webkit-background-clip']: 'text'
+  },
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #BBFFF2 335px, #BBFFF2 990px, #000000 990px)',
+    WebkitTextFillColor: 'transparent',
+    WebkitBackgroundClip: 'text'
+  },
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #FFFDCD 335px, #FFFDCD 990px, #000000 990px)',
+    ['-webkit-text-fill-color']: 'transparent',
+    ['-webkit-background-clip']: 'text'
+  },
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #FFD0EF 335px, #FFD0EF 990px, #000000 990px)',
+    WebkitTextFillColor: 'transparent',
+    WebkitBackgroundClip: 'text'
+  },
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #D3F5FF 335px, #D3F5FF 990px, #000000 990px)',
+    ['-webkit-text-fill-color']: 'transparent',
+    ['-webkit-background-clip']: 'text'
+  },
+  {
+    background:
+      'linear-gradient(to right, #000000 335px, #FFFFFF 335px, #FFFFFF 990px, #000000 990px)',
+    WebkitTextFillColor: 'transparent',
+    WebkitBackgroundClip: 'text'
+  }
+  // {
+  //   background:
+  //     'linear-gradient(to right, #000000 335px, #FF9A9A 335px, #FF9A9A 990px, #000000 990px)',
+  //   ['-webkit-text-fill-color']: 'transparent',
+  //   ['-webkit-background-clip']: 'text'
+  // }
+];
 
-const titleColor = {
-	width: "minContent",
-	["align-self"]: "center",
-	["margin-left"]: "250px",
-	["margin-top"]: "3vh",
-	["grid-row-start"]: 1,
-	["font-family"]: "'Roboto', sansSerif",
-	["font-size"]: "13vw",
-	["font-style"]: "normal",
-	["font-weight"]: "bold",
-	["line-height"]: "90%",
-	["letter-spacing"]: "0.065em",
-	["word-wrap"]: "break-word",
-	width: "60vw",
-	background: "linear-gradient(to right, #000000 335px, #BAFFF7 335px, #BAFFF7 990px, #000000 990px)",
-	WebkitTextFillColor: "transparent",
-	WebkitBackgroundClip: "text",
-}
+const backgroundColors = [
+  {backgroundColor: '#9ABCFF', color: '#FFFFFF'},
+  {backgroundColor: '#FFCBCB', color: '#BBFFF2'},
+  {backgroundColor: '#FFD0EF', color: '#FFFDCD'},
+  {backgroundColor: '#68DEC2', color: '#FFD0EF'},
+  {backgroundColor: '#EABBFF', color: '#D3F5FF'},
+  {backgroundColor: '#ECFFB6', color: '#FFFFFF'}
+];
 
-const titleColor2 = {
-	width: "minContent",
-	alignSelf: "center",
-	marginLeft: "250px",
-	marginTop: "3vh",
-	gridRowStart: 1,
-	fontFamily: "'Roboto', sansSerif",
-	fontSize: "13vw",
-	fontStyle: "normal",
-	fontWeight: "bold",
-	lineHeight: "90%",
-	letterSpacing: "0.065em",
-	["word-wrap"]: "break-word",
-	width: "60vw",
-	background: "linear-gradient(to right, #000000 335px, #CD83DF 335px, #CD83DF 990px, #000000 990px)",
-	["-webkit-text-fill-color"]: "transparent",
-	["-webkit-background-clip"]: "text",
-}
+const boxColor = {
+  backgroundColor: '#FF9A9A'
+};
 
-const subtitleColor = {
-	["align-self"]: "center",
-	width: "50vw",
-	["margin-left"]: "250px",
-	["font-family"]: "'Roboto', sans-serif",
-	["font-style"]: "normal",
-	["font-weight"]: "bold",
-	["line-height"]: "142.69%",
-	["letter-spacing"]: "0.285em",
-	["font-size"]: "3.1vw",
-	["grid-row-start"]: 2,
-	background: "linear-gradient(to right, #000000 335px, #BAFFF7 335px, #BAFFF7 990px, #000000 990px)",
-	WebkitTextFillColor: "transparent",
-	WebkitBackgroundClip: "text",
-}
+const boxColor2 = {
+  backgroundColor: '#D1B5DB'
+};
 
-const subtitleColor2 = {
-	["align-self"]: "center",
-	width: "50vw",
-	["margin-left"]: "250px",
-	["font-family"]: "'Roboto', sans-serif",
-	["font-style"]: "normal",
-	["font-weight"]: "bold",
-	["line-height"]: "142.69%",
-	["letter-spacing"]: "0.285em",
-	["font-size"]: "3.1vw",
-	["grid-row-start"]: 2,
-	background: "linear-gradient(to right, #000000 335px, #CD83DF 335px, #CD83DF 990px, #000000 990px)",
-	["-webkit-text-fill-color"]: "transparent",
-	["-webkit-background-clip"]: "text",
-}
+const buttonColor = {
+  backgroundColor: '#FF9A9A',
+  color: '#CD83DF'
+};
 
-const box = {
-	position: "absolute",
-	zIndex: "-2",
-	backgroundColor: "#D1B5DB",
-	width: "655px",
-	height: "70vw",
-	left: "585px",
-	top: "0",
-}
+const buttonColor2 = {
+  backgroundColor: '#D1B5DB',
+  color: '#BAFFF7'
+};
 
-const box2 = {
-	position: "absolute",
-	zIndex: "-2",
-	backgroundColor: "#FF9A9A",
-	color: "#CD83DF",
-	width: "655px",
-	height: "70vw",
-	left: "585px",
-	top: "0",
-}
+const HeadlineModule = ({title, subtitle, button}) => {
+  const [colorIndex, setColorIndex] = useState(0);
+  const [backgroundColorIndex, setBackgroundColorIndex] = useState(0);
 
-const style = {
-    position: "absolute",
-    top: "3vw",
-    left: "90vw",
-    borderRadius: "100%",
-    width: "100px",
-    height: "100px",
-    fontFamily: "'Roboto', sansSerif",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: "24px",
-    lineHeight: "105.2%",
-    letterSpacing: "0.065em",
-    backgroundColor: "#D1B5DB",
-    color: "#BAFFF7"
-}
+  const color = titleColors[colorIndex];
+  const backgroundColor = backgroundColors[backgroundColorIndex];
 
-const style2 = {
-    position: "absolute",
-    top: "3vw",
-    left: "90vw",
-    borderRadius: "100%",
-    width: "100px",
-    height: "100px",
-    fontFamily: "'Roboto', sansSerif",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: "24px",
-    lineHeight: "105.2%",
-    letterSpacing: "0.065em",
-    backgroundColor: "#FF9A9A",
-    color: "#CD83DF"
-}
+  function changeColor() {
+    // if (colorIndex < titleColors.length - 1) {
+    //   setColorIndex(colorIndex + 1);
+    // } else {
+    //   setColorIndex(0);
+    // }
+    setColorIndex((colorIndex + 1) % titleColors.length);
+  }
 
+  function changeBackgroundColor() {
+    setBackgroundColorIndex(
+      (backgroundColorIndex + 1) % backgroundColors.length
+    );
+  }
 
-
-const HeadlineModule = ({ title, subtitle, button }) => {
-	const [color, setColor] = useState(true);
-
-	function toggle() {
-        setColor(!color);
-    }
-
-	return (
-	<div className={styles.wrapper}>
-		<div className={styles.box} style={!color ? box : box2} onClick={() => toggle()}></div>
-		<h1 className={styles.title} data-content={title} style={!color ? titleColor : titleColor2} onClick={() => toggle()}>{title}</h1>
-		<h2 className={styles.subtitle} style={!color ? subtitleColor : subtitleColor2} onClick={() => toggle()}>{subtitle}</h2>
-		<button style={!color ? style : style2} onClick={() => toggle()}>{button}</button>
-	</div>
-	);
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.box} style={backgroundColor}></div>
+      <h1 className={styles.title} style={color}>
+        {title}
+      </h1>
+      <h2 className={styles.subtitle} style={color}>
+        {subtitle}
+      </h2>
+      <button
+        className={styles.button}
+        style={backgroundColor}
+        onClick={() => {
+          changeColor();
+          changeBackgroundColor();
+        }}
+      >
+        {button}
+      </button>
+    </div>
+  );
 };
 
 export default HeadlineModule;
