@@ -1,23 +1,16 @@
 /* 🌈 This is the client side 🌈*/
 
-/* dependencies */
-import fetch from 'isomorphic-unfetch';
-
 /* layout */
 import DefaultLayout from '../components/layouts/DefaultLayout';
 
 /* components */
 import HeadlineModule from '../components/modules/HeadlineModule';
 import Collage from '../components/modules/Collage/Collage.jsx';
-import ToggleButton from '../components/modules/ToggleButton/ToggleButton';
-
-/* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
-function fetchUrl(url) {
-  return fetch(url).then(r => r.json());
-}
+import fetchUrl from '../fetchUrl';
 
 /* This route gets hit when our user appends a slug to
 the url and therefore the page request, e.g. your-site.com/about */
+
 const SlugPage = ({data}) => {
   const {content} = data;
   const headlineModuleData = content.body.find(

@@ -56,24 +56,6 @@ const backgroundColors = [
   {backgroundColor: '#ECFFB6', color: '#FFFFFF'}
 ];
 
-const boxColor = {
-  backgroundColor: '#FF9A9A'
-};
-
-const boxColor2 = {
-  backgroundColor: '#D1B5DB'
-};
-
-const buttonColor = {
-  backgroundColor: '#FF9A9A',
-  color: '#CD83DF'
-};
-
-const buttonColor2 = {
-  backgroundColor: '#D1B5DB',
-  color: '#BAFFF7'
-};
-
 const HeadlineModule = ({title, subtitle, button}) => {
   const [colorIndex, setColorIndex] = useState(0);
   const [backgroundColorIndex, setBackgroundColorIndex] = useState(0);
