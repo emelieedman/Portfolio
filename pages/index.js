@@ -1,8 +1,10 @@
 import fetchUrl from '../fetchUrl';
 import DefaultLayout from '../components/layouts/DefaultLayout';
+import App from '../components/modules/App/App';
 
 import HeadlineModule from '../components/modules/HeadlineModule';
 import Collage from '../components/modules/Collage/Collage.jsx';
+import Project from '../components/modules/Project/Project';
 
 const IndexPage = ({data}) => {
   const {content} = data;
@@ -10,24 +12,15 @@ const IndexPage = ({data}) => {
     item => item.component === 'Headline'
   );
   const collageData = content.body.find(item => item.component === 'Collage');
+  const projectData = content.body.find(item => item.component === 'Project');
 
   return (
     <DefaultLayout>
-      {headlineModuleData ? (
-        <HeadlineModule
-          title={headlineModuleData.title}
-          subtitle={headlineModuleData.subtitle}
-          button={headlineModuleData.button}
-        />
-      ) : null}
-      {collageData ? (
-        <Collage
-          title={collageData.title}
-          project={collageData.project}
-          project2={collageData.project2}
-          project3={collageData.project3}
-          project4={collageData.project4}
-          project5={collageData.project5}
+      {headlineModuleData && collageData && projectData ? (
+        <App
+          headlineModuleData={headlineModuleData}
+          collageData={collageData}
+          projectData={projectData}
         />
       ) : null}
     </DefaultLayout>
@@ -35,7 +28,7 @@ const IndexPage = ({data}) => {
 };
 
 IndexPage.getInitialProps = async () => {
-  const data = await fetchUrl(`http://localhost:3000/api/page/welcome`);
+  const data = await fetchUrl(`http://localhost:3000/api/page/home`);
 
   return {data};
 };
