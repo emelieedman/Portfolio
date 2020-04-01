@@ -7,7 +7,8 @@ const HeadlineModule = ({
   backgroundColor,
   color,
   changeColor,
-  changeBackgroundColor
+  changeBackgroundColor,
+  changeSingleColor
 }) => {
   return (
     <div className={styles.wrapper}>
@@ -24,6 +25,7 @@ const HeadlineModule = ({
         onClick={() => {
           changeColor();
           changeBackgroundColor();
+          changeSingleColor();
         }}
       >
         {button}

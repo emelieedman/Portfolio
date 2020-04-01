@@ -45,3 +45,12 @@ export const backgroundColors = [
   {backgroundColor: '#EABBFF', color: '#D3F5FF'},
   {backgroundColor: '#ECFFB6', color: '#FFFFFF'}
 ];
+
+export const singleColors = [
+  {color: '#9ABCFF'},
+  {color: '#FFCBCB'},
+  {color: '#FFD0EF'},
+  {color: '#68DEC2'},
+  {color: '#EABBFF'},
+  {color: '#ECFFB6'}
+];
