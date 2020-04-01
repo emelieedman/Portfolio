@@ -1,10 +1,6 @@
-import fetchUrl from '../fetchUrl';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import App from '../components/modules/App/App';
-
-import HeadlineModule from '../components/modules/HeadlineModule';
-import Collage from '../components/modules/Collage/Collage.jsx';
-import Project from '../components/modules/Project/Project';
+import fetchUrl from '../fetchUrl';
 
 const IndexPage = ({data}) => {
   const {content} = data;
