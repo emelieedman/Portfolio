@@ -1,0 +1,100 @@
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1.2);
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: repeat(10, 10vw);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.title {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  align-self: center;
+  width: 20vw;
+  word-wrap: break-word;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 13vw;
+}
+
+.project {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 6vw;
+}
+
+.project:hover {
+  animation: scale-up-center 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.project2 {
+  grid-column-start: 5;
+  grid-row-start: 4;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 9vw;
+}
+
+.project2:hover {
+  animation: scale-up-center 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.project3 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  grid-column-start: 5;
+  grid-row-start: 5;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 10vw;
+}
+
+.project3:hover {
+  animation: scale-up-center 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.project4 {
+  grid-column-start: 6;
+  grid-row-start: 5;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 9vw;
+}
+
+.project4:hover {
+  animation: scale-up-center 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.project5 {
+  grid-column-start: 2;
+  grid-row-start: 8;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 6vw;
+}
+
+.project5:hover {
+  animation: scale-up-center 0.1s linear;
+  animation-fill-mode: forwards;
+}

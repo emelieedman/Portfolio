@@ -1,7 +1,8 @@
 .wrapper {
 	display: grid;
 	grid-template-rows: auto 20vh;
-	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
 }
 
 .title {
@@ -10,38 +11,43 @@
 	margin-left: 250px;
 	margin-top: 3vh;
 	grid-row-start: 1;
-	font-family: 'Roboto', sans-serif;
 	font-size: 13vw;
-	font-style: normal;
 	font-weight: bold;
 	line-height: 90%;
 	letter-spacing: 0.065em;
-	background: linear-gradient(to right, #000000 260px, #BAFFF7 260px, #BAFFF7 775px, #000000 775px);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+	word-wrap: break-word;
+	width: 60vw;
 }
 
 .subtitle {
 	align-self: center;
 	width: 50vw;
 	margin-left: 250px;
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
 	font-weight: bold;
 	line-height: 142.69%;
 	letter-spacing: 0.285em;
 	font-size: 3.1vw;
 	grid-row-start: 2;
-	background: linear-gradient(to right, #000000 255px, #BAFFF7 255px);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
 }
 
 .box {
-	position: fixed;
+	position: absolute;
 	z-index: -2;
-	background-color: #D1B5DB;
-	width: 515px;
-	height: 100%;
-	left: 510px;
+	width: 655px;
+	height: 70vw;
+	left: 585px;
+	top: 0;
+}
+
+.button {
+	position: absolute;
+    top: 3vw;
+    left: 90vw;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 105.2%;
+    letter-spacing: 0.065em;
 }
