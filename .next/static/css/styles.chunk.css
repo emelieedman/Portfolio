@@ -1,0 +1,378 @@
+
+/* Global CSS Overwrites */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper___3ctKN {
+  display: grid;
+  grid-template-rows: auto 20vh;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal; }
+
+.title___1CDvp {
+  width: min-content;
+  align-self: center;
+  margin-left: 250px;
+  margin-top: 3vh;
+  grid-row-start: 1;
+  font-size: 13vw;
+  font-weight: bold;
+  line-height: 90%;
+  letter-spacing: 0.065em;
+  word-wrap: break-word;
+  width: 60vw; }
+
+.subtitle___35mkW {
+  align-self: center;
+  width: 50vw;
+  margin-left: 250px;
+  font-weight: bold;
+  line-height: 142.69%;
+  letter-spacing: 0.285em;
+  font-size: 3.1vw;
+  grid-row-start: 2; }
+
+.box___1KUqb {
+  position: absolute;
+  z-index: -2;
+  width: 655px;
+  height: 70vw;
+  left: 585px;
+  top: 0; }
+
+.button___3gxK- {
+  position: absolute;
+  top: 3vw;
+  left: 90vw;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 105.2%;
+  letter-spacing: 0.065em; }
+
+@keyframes scale-up-center___33Emr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1.2); } }
+
+.wrapper___SCdiC {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: repeat(10, 10vw);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold; }
+
+.title___LI0u_ {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  align-self: center;
+  width: 20vw;
+  word-wrap: break-word;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 13vw; }
+
+.project___a4AYA {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 6vw; }
+
+.project___a4AYA:hover {
+  animation: scale-up-center___33Emr 0.1s linear;
+  animation-fill-mode: forwards; }
+
+.project2___1QuqT {
+  grid-column-start: 5;
+  grid-row-start: 4;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 9vw; }
+
+.project2___1QuqT:hover {
+  animation: scale-up-center___33Emr 0.1s linear;
+  animation-fill-mode: forwards; }
+
+.project3___2nXMX {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  grid-column-start: 5;
+  grid-row-start: 5;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 10vw; }
+
+.project3___2nXMX:hover {
+  animation: scale-up-center___33Emr 0.1s linear;
+  animation-fill-mode: forwards; }
+
+.project4___26CHq {
+  grid-column-start: 6;
+  grid-row-start: 5;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 9vw; }
+
+.project4___26CHq:hover {
+  animation: scale-up-center___33Emr 0.1s linear;
+  animation-fill-mode: forwards; }
+
+.project5___ZUiVu {
+  grid-column-start: 2;
+  grid-row-start: 8;
+  line-height: 105.2%;
+  letter-spacing: 0.065em;
+  font-size: 6vw; }
+
+.project5___ZUiVu:hover {
+  animation: scale-up-center___33Emr 0.1s linear;
+  animation-fill-mode: forwards; }
+
+.wrapper___1NY5g {
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: 40vh 30vh 60vh 30vh 60vh 30vh 60vh 30vh 60vh;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  display: grid; }
+
+.title___24nBl {
+  grid-row-start: 1;
+  margin-left: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 142.69%;
+  /* or 137px */
+  display: flex;
+  align-self: flex-start;
+  letter-spacing: 0.185em; }
+
+.subtitle___-L6hG,
+.subtitle2___Jj0qk,
+.subtitle3___yNZBv,
+.subtitle4___PWP-e {
+  grid-row-start: 2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 103px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.185em; }
+
+.subtitle___-L6hG {
+  margin-left: 100px; }
+
+.paragraph___3Xu6L,
+.paragraph2___29-iR,
+.paragraph3___27CQT,
+.paragraph4___3W4Fo {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 5vh;
+  width: fit-content;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.185em; }
+
+.paragraph___3Xu6L {
+  margin-left: 100px; }
+
+.image___5RbdF,
+.image2___1pfsT,
+.image3___2jUD5,
+.image4___jEsoW {
+  width: 50vw; }
+
+.image___5RbdF {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-left: 100px; }
+
+.subtitle2___Jj0qk {
+  grid-row-start: 4;
+  grid-column-start: 4; }
+
+.paragraph2___29-iR {
+  grid-row-start: 5;
+  grid-column-start: 4;
+  grid-column-end: 6; }
+
+.image2___1pfsT {
+  grid-row-start: 4;
+  grid-column-start: 1; }
+
+.subtitle3___yNZBv {
+  grid-row-start: 6;
+  margin-left: 100px; }
+
+.paragraph3___27CQT {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  margin-left: 100px; }
+
+.image3___2jUD5 {
+  grid-row-start: 6;
+  grid-column-start: 3;
+  margin-left: 100px; }
+
+.subtitle4___PWP-e {
+  grid-row-start: 8;
+  grid-column-start: 4; }
+
+.paragraph4___3W4Fo {
+  grid-row-start: 9;
+  grid-column-start: 4;
+  grid-column-end: 6; }
+
+.image4___jEsoW {
+  grid-row-start: 8;
+  grid-column-start: 1; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
