@@ -1,10 +1,10 @@
 import HeadlineModule from '../HeadlineModule/index';
 import Collage from '../Collage/Collage';
-import Project from '../Project/Project';
+import PostImgRight from '../PostImgRight/PostImgRight';
 import {useState} from 'react';
 import {titleColors, backgroundColors, singleColors} from './colors';
 
-const App = ({headlineModuleData, collageData, projectData}) => {
+const App = ({headlineModuleData, collageData, postImgRightData}) => {
   const [colorIndex, setColorIndex] = useState(0);
   const [backgroundColorIndex, setBackgroundColorIndex] = useState(0);
   const [singleColorIndex, setSingleColorIndex] = useState(0);
@@ -32,6 +32,8 @@ const App = ({headlineModuleData, collageData, projectData}) => {
     setSingleColorIndex((singleColorIndex + 1) % singleColors.length);
   }
 
+  console.log(postImgRightData);
+
   return (
     <div>
       <HeadlineModule
@@ -57,10 +59,10 @@ const App = ({headlineModuleData, collageData, projectData}) => {
         backgroundColor={backgroundColor}
       />
 
-      <Project
-        title={projectData.title}
-        paragraph={projectData.paragraph}
-        image={projectData.image}
+      <PostImgRight
+        title={postImgRightData.Title}
+        paragraph={postImgRightData.Paragraph}
+        image={postImgRightData.Image}
       />
     </div>
   );

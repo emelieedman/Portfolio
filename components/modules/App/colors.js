@@ -22,18 +22,6 @@ export const titleColors = [
       'linear-gradient(to right, #000000 335px, #FFD0EF 335px, #FFD0EF 990px, #000000 990px)',
     WebkitTextFillColor: 'transparent',
     WebkitBackgroundClip: 'text'
-  },
-  {
-    background:
-      'linear-gradient(to right, #000000 335px, #D3F5FF 335px, #D3F5FF 990px, #000000 990px)',
-    ['-webkit-text-fill-color']: 'transparent',
-    ['-webkit-background-clip']: 'text'
-  },
-  {
-    background:
-      'linear-gradient(to right, #000000 335px, #FFFFFF 335px, #FFFFFF 990px, #000000 990px)',
-    WebkitTextFillColor: 'transparent',
-    WebkitBackgroundClip: 'text'
   }
 ];
 
@@ -41,16 +29,12 @@ export const backgroundColors = [
   {backgroundColor: '#9ABCFF', color: '#FFFFFF'},
   {backgroundColor: '#FFCBCB', color: '#BBFFF2'},
   {backgroundColor: '#FFD0EF', color: '#FFFDCD'},
-  {backgroundColor: '#68DEC2', color: '#FFD0EF'},
-  {backgroundColor: '#EABBFF', color: '#D3F5FF'},
-  {backgroundColor: '#ECFFB6', color: '#FFFFFF'}
+  {backgroundColor: '#68DEC2', color: '#FFD0EF'}
 ];
 
 export const singleColors = [
   {color: '#9ABCFF'},
   {color: '#FFCBCB'},
   {color: '#FFD0EF'},
-  {color: '#68DEC2'},
-  {color: '#EABBFF'},
-  {color: '#ECFFB6'}
+  {color: '#68DEC2'}
 ];

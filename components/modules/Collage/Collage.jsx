@@ -9,7 +9,6 @@ const Collage = ({
   project5,
   singleColor
 }) => {
-  console.log(singleColor);
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.title}>{title}</h1>
