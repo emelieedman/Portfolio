@@ -8,17 +8,16 @@ const IndexPage = ({data}) => {
     item => item.component === 'Headline'
   );
   const collageData = content.body.find(item => item.component === 'Collage');
-  const postImgRightData = content.body.find(
-    item => item.component === 'PostImgRight'
-  );
+  const projectData = content.body.find(item => item.component === 'Project');
+  console.log(projectData);
 
   return (
     <DefaultLayout>
-      {headlineModuleData && collageData && postImgRightData ? (
+      {headlineModuleData && collageData && projectData ? (
         <App
           headlineModuleData={headlineModuleData}
           collageData={collageData}
-          postImgRightData={postImgRightData}
+          projectData={projectData}
         />
       ) : null}
     </DefaultLayout>

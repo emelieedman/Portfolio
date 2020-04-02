@@ -28,13 +28,13 @@ export const titleColors = [
 export const backgroundColors = [
   {backgroundColor: '#9ABCFF', color: '#FFFFFF'},
   {backgroundColor: '#FFCBCB', color: '#BBFFF2'},
-  {backgroundColor: '#FFD0EF', color: '#FFFDCD'},
+  {backgroundColor: '#DEBCD2', color: '#FFFDCD'},
   {backgroundColor: '#68DEC2', color: '#FFD0EF'}
 ];
 
 export const singleColors = [
   {color: '#9ABCFF'},
   {color: '#FFCBCB'},
-  {color: '#FFD0EF'},
+  {color: '#DEBCD2'},
   {color: '#68DEC2'}
 ];

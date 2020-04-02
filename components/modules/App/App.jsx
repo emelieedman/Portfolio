@@ -1,10 +1,10 @@
 import HeadlineModule from '../HeadlineModule/index';
 import Collage from '../Collage/Collage';
-import PostImgRight from '../PostImgRight/PostImgRight';
+import Project from '../Project/Project';
 import {useState} from 'react';
 import {titleColors, backgroundColors, singleColors} from './colors';
 
-const App = ({headlineModuleData, collageData, postImgRightData}) => {
+const App = ({headlineModuleData, collageData, projectData}) => {
   const [colorIndex, setColorIndex] = useState(0);
   const [backgroundColorIndex, setBackgroundColorIndex] = useState(0);
   const [singleColorIndex, setSingleColorIndex] = useState(0);
@@ -32,7 +32,7 @@ const App = ({headlineModuleData, collageData, postImgRightData}) => {
     setSingleColorIndex((singleColorIndex + 1) % singleColors.length);
   }
 
-  console.log(postImgRightData);
+  console.log(projectData);
 
   return (
     <div>
@@ -59,10 +59,20 @@ const App = ({headlineModuleData, collageData, postImgRightData}) => {
         backgroundColor={backgroundColor}
       />
 
-      <PostImgRight
-        title={postImgRightData.Title}
-        paragraph={postImgRightData.Paragraph}
-        image={postImgRightData.Image}
+      <Project
+        title={projectData.Title}
+        subtitle={projectData.subtitle}
+        paragraph={projectData.Paragraph}
+        image={projectData.Image}
+        subtitle2={projectData.subtitle2}
+        paragraph2={projectData.paragraph2}
+        image2={projectData.image2}
+        subtitle3={projectData.subtitle3}
+        paragraph3={projectData.paragraph3}
+        image3={projectData.image3}
+        subtitle4={projectData.subtitle4}
+        paragraph4={projectData.paragraph4}
+        image4={projectData.image4}
       />
     </div>
   );
